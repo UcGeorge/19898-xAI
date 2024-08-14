@@ -1,0 +1,9 @@
+[flake8]
+max-line-length = 88  # Common extension to PEP 8's 79 chars for better readability with modern screens
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    migrations,
+    # Add any other directories or files you wish to exclude
