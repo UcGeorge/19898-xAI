@@ -4,7 +4,7 @@ def calculate_area_of_circle(radius):
 
     if radius <= 0:
         raise ValueError("Radius must be positive")
-    
+
     area = pi * radius ** 2
     return area
 

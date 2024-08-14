@@ -1,5 +1,5 @@
 [flake8]
-max-line-length = 88
+max-line-length = 88  # Common extension to PEP 8's 79 chars for better readability with modern screens
 exclude = 
     .git,
     __pycache__,
