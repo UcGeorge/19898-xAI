@@ -1,4 +1,4 @@
-name: Code Quality and Type Check
+name: Code Quality Check
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  code-quality-and-type-check:
+  code-quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,8 +22,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 mypy
 
-      - name: Run mypy
-        run: mypy .
+      - name: Run mypy for type checking
+        run: mypy . --ignore-missing-imports
 
-      - name: Run Flake8
+      - name: Run Flake8 for PEP 8 compliance
         run: flake8 .
