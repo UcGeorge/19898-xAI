@@ -1,0 +1,7 @@
+security:
+  ignore-cvss-severity-below: 4
+  ignore-cvss-unknown-severity: True
+  # ignore-vulnerabilities:
+    # Add any vulnerability IDs you want to ignore
+    # - 1234
+  continue-on-vulnerability-error: False
